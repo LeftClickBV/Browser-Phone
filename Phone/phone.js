@@ -21,6 +21,21 @@ const sipjsversion = "0.20.0";
 // Set the following to null to disable
 let welcomeScreen = null;
 
+let leftclickPhoneRegistrationBaseUrl = 'https://www.leftclick.cloud/conversation/phone/';
+
+function web_hook_on_invite(session) {
+    let destination = null;
+    if (session.data.calldirection === "inbound") {
+        destination = session.remoteIdentity.uri.user;
+    } else if (session.data.calldirection === "outbound") {
+        destination = session.data.dst;
+    }
+
+    if (destination) {
+        window.open(leftclickPhoneRegistrationBaseUrl + destination, 'Conversations', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1200,height=700');
+    }
+}
+
 /**
  * Lanaguage Packs (lang/xx.json)
  * Note: The following should correspond to files on your server. 
