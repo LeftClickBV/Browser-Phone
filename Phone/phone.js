@@ -985,7 +985,7 @@ function InitUi(){
     leftHTML += "<div style=\"padding-left:5px; padding-right:5px\">";
     leftHTML += "<button id=BtnFindBuddy><i class=\"fa fa-search\"></i></button>";
     leftHTML += "<span id=divFindBuddy class=searchClean style=\"display:none\"><INPUT id=txtFindBuddy type=text autocomplete=none style=\"width:120px;\"></span>";
-    leftHTML += "<button id=BtnFreeDial><i class=\"fa fa-phone\"></i></button>";
+    leftHTML += "<button id=BtnFreeDial><i class=\"fa fa-tty\"></i></button>";
     leftHTML += "<button id=BtnAddSomeone><i class=\"fa fa-user-plus\"></i></button>";
     if(false){
          // TODO
