@@ -32,7 +32,8 @@ function web_hook_on_invite(session) {
     }
 
     if (destination) {
-        window.open(leftclickPhoneRegistrationBaseUrl + destination, 'Conversations', 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1200,height=700');
+        let title = 'Conversation ' + destination;
+        window.open(leftclickPhoneRegistrationBaseUrl + destination, title, 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1470,height=700');
     }
 }
 
