@@ -7919,12 +7919,22 @@ function UpdateBuddyList(){
     
     // Sort and shuffle Buddy List
     // ===========================
+    // Prioritize buddies where subscribed to
     Buddies.sort(function(a, b){
+        var aSub = a.EnableSubscribe;
+        var bSub = b.EnableSubscribe;
         var aMo = moment.utc(a.lastActivity.replace(" UTC", ""));
         var bMo = moment.utc(b.lastActivity.replace(" UTC", ""));
-        if (aMo.isSameOrAfter(bMo, "second")) {
+
+        if (aSub || !bSub) {
             return -1;
-        } else return 1;
+        } else if(!aSub || bSub) {
+            return 1;
+        } else {
+            if (aMo.isSameOrAfter(bMo, "second")) {
+                return -1;
+            } else return 1;
+        }
         return 0;
     });
 
