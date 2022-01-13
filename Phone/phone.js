@@ -1035,7 +1035,7 @@ function InitUi(){
     $("#txtFindBuddy").on('keyup', function(event){
         UpdateBuddyList();
     });
-    $("#BtnFreeDial").attr("title", lang.call)
+    $("#BtnFreeDial").attr("title", lang.dial_pad)
     $("#BtnFreeDial").on('click', function(event){
         ShowDial();
     });

@@ -178,6 +178,7 @@
     "complete_transfer" : "Complete Transfer",
     "end_transfer_call" : "End Transfer Call",
     "call" : "Call",
+    "dial_pad" : "Dial pad",
     "cancel_call" : "Cancel Call",
     "join_conference_call" : "Join Conference Call",
     "end_conference_call" : "End Conference Call",
