@@ -31,10 +31,16 @@ function web_hook_on_invite(session) {
         destination = session.data.dst;
     }
 
-    if (destination) {
-        let title = 'Conversation ' + destination;
-        window.open(leftclickPhoneRegistrationBaseUrl + destination, title, 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1470,height=700');
-    }
+    // Focus on the phone
+    window.focus()
+
+    // Delay the timeout pop-up
+    setTimeout(function() {
+        if (destination) {
+            let title = 'Conversation ' + destination;
+            window.open(leftclickPhoneRegistrationBaseUrl + destination, title, 'directories=no,titlebar=no,toolbar=no,location=no,status=no,menubar=no,scrollbars=no,resizable=no,width=1470,height=700');
+        }
+    }, 2000);
 }
 
 /**
