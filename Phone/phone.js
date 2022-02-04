@@ -7933,9 +7933,9 @@ function UpdateBuddyList(){
         var aMo = moment.utc(a.lastActivity.replace(" UTC", ""));
         var bMo = moment.utc(b.lastActivity.replace(" UTC", ""));
 
-        if (aSub || !bSub) {
+        if (aSub && !bSub) {
             return -1;
-        } else if(!aSub || bSub) {
+        } else if(!aSub && bSub) {
             return 1;
         } else {
             if (aMo.isSameOrAfter(bMo, "second")) {
