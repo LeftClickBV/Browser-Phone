@@ -11,9 +11,9 @@ This web application is designed to work with Asterisk PBX. Once loaded applicat
 - https://www.innovateasterisk.com/phone/responsive.html *(Responsive Sample Layout - contains ads)*
 - https://www.innovateasterisk.com/phone/popup.html *(Popup Sample Layout - contains ads)*
 
-![Image of Main Interface](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/AudioCall.jpg)
+![Buddy Stream](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/Buddy_Stream.jpg)
 
-## Features v0.2.x
+## Features v0.3.x
 - SIP Audio Calling
 - SIP Video Calling
 - XMPP Messaging 
@@ -30,6 +30,7 @@ This web application is designed to work with Asterisk PBX. Once loaded applicat
 - Useful debug messages sent to console.
 - Works on: Chrome (all features work), Edge (same as Chrome), Opera (same as Chrome), Firefox (Most features work), Safari (Most feature work)
 - Asterisk SFU - Including talker notification and Caller ID
+- Dark Mode & Light Mode - System Setting Detects
 
 ## XMPP Features v0.2.x
 - User Login & Auth (Use SIP credentials)
@@ -70,7 +71,7 @@ This web application is designed to work with Asterisk PBX. Once loaded applicat
 > Note: These files will load automatically from CDN.
 
 ## Lib Folder Download (Off-line)
-You can download the lib folder containing all related library files: https://dtd6jl0d42sve.cloudfront.net/lib/lib.zip
+You can download the lib folder containing all related library files: https://github.com/InnovateAsterisk/Browser-Phone/tree/master/lib
 
 > Note: These files are provided "as-is" for your convenience. Each library folder may contain its own licence and terms of use please refer to the original license holder for more details.
 
@@ -577,11 +578,11 @@ $ sudo asterisk -r
 
 ![Audio Call with Transfer](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/AudioCall_Transfer.jpg)
 
-![Buddy Stream](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/Buddy_Stream.jpg)
+![Image of Main Interface](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/AudioCall.jpg)
 
-![Message Dictate](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/DictateMessage.jpg)
+![Mobile UI](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/UI_Mobile_List_Dark.jpg)
 
-![Call Stats](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/InCall_Stats.png)
+![Call Stats](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/InCall_Stats.jpg)
 
 ![Call Recording Format](https://github.com/InnovateAsterisk/Browser-Phone/blob/master/Screenshots/Recording_Format.jpg)
 
